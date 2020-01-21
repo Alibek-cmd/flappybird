@@ -37,7 +37,7 @@ var grav = 1.7;
 document.addEventListener("keydown", moveUp);
 
 function moveUp(event) {
-  if (event.keyCode == 38) {
+  if (event.keyCode == 40) {
   yPos -= 40;
   fly_audio.play();
 }
