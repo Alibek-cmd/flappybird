@@ -83,7 +83,7 @@ function draw() {
   ctx.font = "24px Roboto";
   ctx.fillText("Ұпай: " + score, 10, canvas.height - 20);
 
-  requestAnimationFrame(draw);
+  window.requestAnimationFrame(draw);
 }
 
 pipeBottom.onload = draw;
