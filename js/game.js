@@ -44,8 +44,6 @@ function moveUp(event) {
 }
 
 function draw() {
-  
-  window.requestAnimationFrame(draw);
   ctx.drawImage(bg, 0, 0);
 
   for (var i = 0; i < pipe.length; i++) {
@@ -67,7 +65,7 @@ function draw() {
     (yPos <= pipe[i].y + pipeUp.height ||
     yPos + bird.height >= pipe[i].y + pipeUp.height + gap) ||
     yPos + bird.height >= canvas.height - fg.height) {
-      window.location.reload();
+      document.location.reload();
       return;
     }
 
@@ -86,7 +84,7 @@ function draw() {
   ctx.font = "24px Roboto";
   ctx.fillText("Ұпай: " + score, 10, canvas.height - 20);
 
-  
+  window.requestAnimationFrame(draw);
 }
 
 pipeBottom.onload = draw;
