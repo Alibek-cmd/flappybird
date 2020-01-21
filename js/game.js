@@ -65,7 +65,7 @@ function draw() {
     (yPos <= pipe[i].y + pipeUp.height ||
     yPos + bird.height >= pipe[i].y + pipeUp.height + gap) ||
     yPos + bird.height >= canvas.height - fg.height) {
-      location.reload();
+      document.location.reload();
     }
 
     if (pipe[i].x == 5) {
