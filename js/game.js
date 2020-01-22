@@ -82,7 +82,7 @@ function draw() {
 
   ctx.fillStyle = '#f47272';
   ctx.font = "24px Roboto";
-  ctx.fillText("Ұпай: " + score, 10, canvas.height - 20);
+  ctx.fillText("Очко: " + score, 10, canvas.height - 20);
 
   window.requestAnimationFrame(draw);
 }
