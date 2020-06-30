@@ -1,4 +1,6 @@
-<h2 style="text-align: center;">Flappybird game by Alibek Baiseiit</h2>
+# Flappybird game by Alibek Baiseiit
 
-Run command below to install<br>
+Run command below to install
+```bash
 git clone https://github.com/Alibek-cmd/flappybird.git
+```
